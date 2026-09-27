@@ -1,0 +1,113 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #101820;
+  color: white;
+  font-family: Arial, sans-serif;
+}
+
+.section-post {
+  width: 100%;
+  min-height: 100vh;
+  padding: 30px;
+}
+
+.section-post ul {
+  list-style: none;
+
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+}
+
+.section-post li {
+  background-color: #1d303e;
+
+  border: 1px solid #52616b;
+  border-radius: 4px;
+
+  padding: 15px;
+
+  min-height: 180px;
+
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+/* Post ID */
+.section-post li::before {
+  content: "";
+}
+
+.section-post p {
+  margin-bottom: 12px;
+  line-height: 1.5;
+  font-size: 14px;
+}
+
+/* Title */
+.section-post p:first-of-type {
+  color: #ffffff;
+  font-weight: 500;
+}
+
+/* Body */
+.section-post p:nth-of-type(2) {
+  color: #ffffff;
+}
+
+/* Buttons */
+.section-post button {
+  border: none;
+  padding: 7px 18px;
+
+  font-size: 12px;
+  font-weight: bold;
+
+  cursor: pointer;
+
+  margin-right: 8px;
+  border-radius: 2px;
+}
+
+/* Edit button */
+.section-post button:first-of-type {
+  background-color: #19e68c;
+  color: #07150e;
+}
+
+/* Delete button */
+.section-post button:last-of-type {
+  background-color: #f04444;
+  color: white;
+}
+
+/* Hover effects */
+.section-post button:first-of-type:hover {
+  background-color: #12c879;
+}
+
+.section-post button:last-of-type:hover {
+  background-color: #d83232;
+}
+
+/* Tablet */
+@media (max-width: 900px) {
+  .section-post ul {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+  .section-post {
+    padding: 15px;
+  }
+
+  .section-post ul {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,0 +1,35 @@
+.form-section {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 30px;
+}
+
+.form-section input {
+  width: 250px;
+  padding: 10px 12px;
+  border: 1px solid #52616b;
+  border-radius: 5px;
+  outline: none;
+  font-size: 14px;
+}
+
+.form-section input:focus {
+  border-color: #19e68c;
+}
+
+.form-section button {
+  padding: 10px 25px;
+  border: none;
+  border-radius: 5px;
+  background-color: #19e68c;
+  color: #07150e;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.form-section button:hover {
+  background-color: #12c879;
+}
